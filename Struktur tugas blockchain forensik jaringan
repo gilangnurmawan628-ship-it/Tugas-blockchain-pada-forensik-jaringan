@@ -1,0 +1,21 @@
+23040700018_Sukmawandana Gilang Nurmawan/
+│
+├── evidence/
+│   ├── PCAP01_23040700018.pcap
+│   ├── PCAP02_23040700018.pcap
+│   ├── PCAP03_23040700018.pcap
+│   ├── PCAP04_23040700018.pcap
+│   └── PCAP05_23040700018.pcap
+│
+├── sourcecode/
+│   └── blockchain_pcap.py
+│
+├── screenshot/
+│   ├── hashing_result.png
+│   ├── blockchain_result.png
+│   └── validation_result.png
+│
+├── report/
+│   └── laporan.pdf
+│
+└── README.md
