@@ -1,0 +1,21 @@
+def validate_blockchain(blockchain):
+    for i in range(1, len(blockchain)):
+
+        current_block = blockchain[i]
+        previous_block = blockchain[i - 1]
+
+        # Cek previous hash
+        if current_block.previous_hash != previous_block.block_hash:
+            return False
+
+        # Cek hash block
+        if current_block.block_hash != current_block.calculate_hash():
+            return False
+
+    return True
+
+# Validasi blockchain
+if validate_blockchain(blockchain):
+    print("Blockchain Validation : VALID")
+else:
+    print("Blockchain Validation : INVALID")
