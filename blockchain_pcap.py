@@ -56,10 +56,12 @@ for i in range(1, 6):
 
     blockchain.append(block)
 
-# Tampilkan Blockchain
-for block in blockchain:
-    print("Index:", block.index)
-    print("File:", block.evidence_file)
-    print("Previous Hash:", block.previous_hash)
-    print("Block Hash:", block.block_hash)
-    print("-" * 50)
+
+
+    return True
+
+# Validasi blockchain
+if validate_blockchain(blockchain):
+    print("Blockchain Validation : VALID")
+else:
+    print("Blockchain Validation : INVALID")
